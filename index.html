@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://zero.webappsecurity.com/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Zero - Personal Banking - Loans - Credit Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link type="text/css" rel="stylesheet" href="./Zero - Personal Banking - Loans - Credit Cards_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./Zero - Personal Banking - Loans - Credit Cards_files/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="./Zero - Personal Banking - Loans - Credit Cards_files/main.css">
+    <link type="text/css" rel="stylesheet" href="./css/styles.css">
+   
+    <!-- <link type="text/css" rel="stylesheet" href="./libs/bootstrap-4.0.0/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./Zero - Personal Banking - Loans - Credit Cards_files/jquery-1.8.2.min.js"></script>
+        <script src="./Zero - Personal Banking - Loans - Credit Cards_files/bootstrap.min.js"></script>
+
+    <script src="./Zero - Personal Banking - Loans - Credit Cards_files/placeholders.min.js"></script>
+    <script type="text/javascript">
+        Placeholders.init({
+            live: true, // Apply to future and modified elements too
+            hideOnFocus: true // Hide the placeholder when the element receives focus     
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ajaxError(function errorHandler(event, xhr, ajaxOptions, thrownError) {
+            if (xhr.status == 403) {
+                window.location.reload();
+            }
+        });
+    </script>
+</head>
+<body contenteditable="false">
+    <div class="wrapper">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+
+            <!-- <div class="container wrapper-message-block">
+                <div class="attention-image">
+                    <img src="./media/attention-image.png" alt="attention!!!">
+                </div>
+                <div class="attention-message-block">
+                    <p>!!!Attention!!! This is a copy of the training site <a target="_blank" href="http://zero.webappsecurity.com">zero.webappsecurity.com</a>. Site copied for educational purposes. </p>
+                </div>
+            </div> -->
+
+            
+            <div class="container">
+                <div class="alert alert-error">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h4 id="blink2">!!Warning!!!</h4>
+                    <p>This is a copy of the training site <a target="_blank" href="http://zero.webappsecurity.com">zero.webappsecurity.com</a>. Site copied for educational purposes.</p>
+                    <p>All actions with the site are performed at your own peril and risk!</p>
+                </div>
+                <a href="http://zero.webappsecurity.com/index.html" class="brand">Zero Bank</a>
+
+                <div>
+                    <ul class="nav float-right">
+                        <li>    <form action="http://zero.webappsecurity.com/search.html" class="navbar-search pull-right" style="padding-right: 20px">
+        <input type="text" id="searchTerm" name="searchTerm" class="search-query" placeholder="Search">
+    </form>
+</li>
+                        <li>
+                            <button id="signin_button" type="button" class="signin btn btn-info">
+                                <i class="icon-signin"></i>Signin
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function() {
+            var path = "/";
+
+            $("#signin_button").click(function(event) {
+                event.preventDefault();
+                window.location.href = path + "login" + ".html";
+            });
+        });
+    </script>
+
+        <div class="container">
+            <div class="top_offset">
+                    <div class="row">
+    <div class="span12">
+        <div id="nav" class="clearfix">
+            <ul id="pages-nav">
+                <li id="homeMenu" class="active"><div><strong>Home</strong></div></li>
+                <li id="onlineBankingMenu"><div><strong>Online Banking</strong></div></li>
+                <li id="feedback"><div><strong>Feedback</strong></div></li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            var path = "/";
+
+            var featureIdToName = {
+                "index": "homeMenu",
+                "online-banking": "onlineBankingMenu",
+                "feedback": "feedback"
+            };
+
+            if (document.location.href.match(".*" + path + "$") != null) {
+                $("#homeMenu").addClass("active");
+            } else {
+                $.each(featureIdToName, function(featureId, featureName) {
+                    if (document.location.href.indexOf(featureId + ".html") >= 0) {
+                        $("#" + featureName).addClass("active");
+                    }
+                });
+            }
+
+            $.each(featureIdToName, function(featureId, featureName) {
+                $("#nav").on("click", "li[id='" + featureName + "']", function(event) {
+                    event.preventDefault();
+                    window.location.href = path + featureId + ".html";
+                });
+            });
+        });
+    </script>
+                    </div>
+
+<div class="row">
+    <div class="span12">
+        <div id="carousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="./Zero - Personal Banking - Loans - Credit Cards_files/main_carousel_1.jpg" width="940" height="401" alt="">
+                    <div class="custom carousel-caption">
+                        <h4>Online Banking</h4>
+                        <p>Welcome to Zero Online Banking. Zero provides a greener and more convenient way to manage your money. Zero enables you to check your account balances, pay your bills, transfer money, and  keep detailed records of your transactions,  wherever there is an internet connection.</p>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img src="./Zero - Personal Banking - Loans - Credit Cards_files/main_carousel_2.jpg" width="940" height="401" alt="">
+                    <div class="custom carousel-caption">
+                        <h4>Online Banking</h4>
+                        <p>Welcome to Zero Online Banking. Zero provides a greener and more convenient way to manage your money. Zero enables you to check your account balances, pay your bills, transfer money, and  keep detailed records of your transactions,  wherever there is an internet connection.</p>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./Zero - Personal Banking - Loans - Credit Cards_files/main_carousel_3.jpg" width="940" height="401" alt="">
+                    <div class="custom carousel-caption">
+                        <h4>Online Banking</h4>
+                        <p>Welcome to Zero Online Banking. Zero provides a greener and more convenient way to manage your money. Zero enables you to check your account balances, pay your bills, transfer money, and  keep detailed records of your transactions,  wherever there is an internet connection.</p>
+                    </div>
+                </div>
+             </div>
+            <a class="carousel-control custom left" href="http://zero.webappsecurity.com/index.html#carousel" data-slide="prev">‹</a>
+            <a class="carousel-control custom right" href="http://zero.webappsecurity.com/index.html#carousel" data-slide="next">›</a>
+        </div>
+    </div>
+</div>
+
+<hr class="row-divider">
+
+<div id="online_banking_features" class="row divider">
+    <div class="span3">
+        <h4><i class="icon icon-bookmark"></i> Online Banking</h4>
+         <p>Click the button below to view  online banking features.</p>
+        <a id="online-banking" class="btn btn-small btn-info">More Services</a>
+    </div>
+    <div class="span3">
+        <div>
+            <h4><span class="headers" id="account_activity_link"><i class="icon icon-user"></i>Checking Account Activity</span></h4>
+            <p>Use Zero to view the most up-to-date listings of your deposits, withdrawals, interest payments, and a number of other useful transactions.
+            </p>
+        </div>
+    </div>
+    <div class="span3">
+        <div>
+            <h4><span class="headers" id="transfer_funds_link"><i class="icon icon-random"></i>Transfer Funds</span></h4>
+            <p>Use Zero to safely and securely transfer funds between accounts. There is no hold placed on online money transfers, so your funds are available when you need them.
+            </p>
+        </div>
+    </div>
+    <div class="span3">
+        <div>
+            <h4><span class="headers" id="money_map_link"><i class="icon icon-list-alt"></i>My Money Map</span></h4>
+             <p>Use Zero to set up and monitor your personalized money map. A money map is an easy-to-use online tool that helps you manage your finances efficiently. With Money Map, you can create a budget, sort your finances into spending and savings categories,  check the interest your accounts are earning, and gain new understanding of your patterns with the help of Zero’s clear charts and graphs.
+             </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        $("#carousel").carousel({ interval: false });
+
+        $("div").on("click", "a[id='online-banking']", function(event){
+            event.preventDefault();
+            window.location.href = "/" + "online-banking" + ".html";
+        });
+
+        var path = "/bank/";
+        var featureIdToName = {
+            "account_activity_link": "account-activity",
+            "transfer_funds_link": "transfer-funds",
+            "money_map_link": "money-map"
+        }
+        $.each(featureIdToName, function(featureId, featureName) {
+            $("#online_banking_features").on("click", "span[id='" + featureId + "']", function(event) {
+                event.preventDefault();
+                window.location.href = path + featureName +".html";
+            });
+        });
+    });
+</script>
+            </div>
+        </div>
+
+        <div class="clearfix push"></div>
+    </div>
+
+<div class="extra">
+    <div class="extra-inner">
+        <div class="container">
+            <div class="row">
+                <div class="span4">
+                    <ul>
+                        <li><span id="download_webinspect_link">Download WebInspect</span></li>
+                    </ul>
+                </div>
+
+                <div class="span4">
+                    <ul>
+                        <li><span id="terms_of_use_link">Terms of Use</span></li>
+                    </ul>
+                </div>
+
+                <div class="span4">
+                    <ul>
+                        <li><span id="contact_hp_link">Contact Micro Focus</span></li>
+                        <li><span id="privacy_statement_link">Privacy Statement</span></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="disclaimer span12">
+                    The Free Online Bank Web site is published by Micro Focus Fortify for the sole purpose of demonstrating
+                    the functionality and effectiveness of Micro Focus Fortify’s WebInspect products in detecting and reporting
+                    Web application vulnerabilities. This site is not a real banking site and any similarities to third party products
+                    and/or Web sites are purely coincidental. This site is provided "as is" without warranty of any kind,
+                    either express or implied. Micro Focus Fortify does not assume any risk in relation to your use of this Web site.
+                    Use of this Web site indicates that you have read and agree to Micro Focus Fortify’s Terms of Use found at
+                    <a href="https://www.microfocus.com/about/legal/#privacy" target="_blank">https://www.microfocus.com/about/legal/#privacy</a>
+                    and Micro Focus Fortify’s Online Privacy Statement found at
+                    <a href="https://www.microfocus.com/about/legal/#privacy" target="_blank">https://www.microfocus.com/about/legal/#privacy</a>.
+
+                    <br><br>
+
+                    Copyright © 2012-2018, Micro Focus Development Company. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        var path = "/";
+
+        var attachClickHandler = function(selector, handler) {
+$(".extra").on('click', selector, handler);
+        }
+
+        var footerLinks = {
+            "download_webinspect_link": { absolute: true, page: "https://software.microfocus.com/en-us/products/webinspect-dynamic-analysis-dast/overview" },
+            "contact_hp_link" : { absolute: true, page: "https://support.fortify.com" },
+            "privacy_statement_link": { absolute: true, page: "https://www.microfocus.com/about/legal/#privacy" },
+            "terms_of_use_link": { absolute: true, page: "https://www.microfocus.com/about/legal/" }
+        };
+
+        $.each(footerLinks, function(linkId, link) {
+            attachClickHandler('span[id="' + linkId + '"]', function(event) {
+                event.preventDefault();
+                if (link.absolute) {
+                    window.location.href = link.page;
+                } else {
+                    window.location.href = path + link.page + ".html";
+                }
+            });
+        });
+    });
+</script>
+
+
+</body></html>
