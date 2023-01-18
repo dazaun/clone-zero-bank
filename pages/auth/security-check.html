@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<!-- saved from url=(0041)http://zero.webappsecurity.com/login.html -->
+<!-- saved from url=(0055)http://zero.webappsecurity.com/auth/security-check.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <title>Zero - Log in</title>
+    <title>Zero - Error</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <link type="text/css" rel="stylesheet" href="./downloaded_files/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="./downloaded_files/font-awesome.css">
-    <link type="text/css" rel="stylesheet" href="./downloaded_files/main.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="text/css" rel="stylesheet" href="./security-check_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./security-check_files/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="./security-check_files/main.css">
 
+    <script src="./security-check_files/jquery-1.8.2.min.js.Без названия"></script>
+        <script src="./security-check_files/bootstrap.min.js.Без названия"></script>
 
-    <script src="./downloaded_files/jquery-1.8.2.min.js"></script>
-    <script src="./downloaded_files/bootstrap.min.js"></script>
-    <script src="./downloaded_files/placeholders.min.js"></script>
-
+    <script src="./security-check_files/placeholders.min.js.Без названия"></script>
     <script type="text/javascript">
         Placeholders.init({
             live: true, // Apply to future and modified elements too
@@ -36,7 +33,7 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <a href="./index.html" class="brand">Zero Bank</a>
+                <a href="http://zero.webappsecurity.com/index.html" class="brand">Zero Bank</a>
             </div>
         </div>
     </div>
@@ -44,60 +41,18 @@
         <div class="container">
             <div class="top_offset">
 
-
 <div class="row">
     <div class="offset3 span6">
         <div class="page-header">
-                <h3>Log in to ZeroBank</h3>
+            <h3>Error</h3>
         </div>
 
-        <form id="login_form" action="" method="post" class="form-horizontal">
+        Exception:
+            <pre>                java.lang.NullPointerException
 
-            <div class="form-inputs">
-                <div class="control-group">
-                    <label class="control-label" for="user_login">Login</label>
-                    <div class="controls">
-                        <input type="text" id="user_login" name="user_login" tabindex="1" autocomplete="off">
-                        <i id="credentials" class="icon-question-sign" style="padding-left: 5px" data-original-title=""></i>
-                    </div>
-                </div>
-
-                <div class="control-group">
-                    <label class="control-label" for="user_password">Password</label>
-                    <div class="controls">
-                        <input type="password" id="user_password" name="user_password" tabindex="2" autocomplete="off">
-                    </div>
-                </div>
-
-                <div class="control-group">
-                    <label class="control-label" for="user_remember_me">Keep me signed in</label>
-                    <div class="controls">
-                        <input type="checkbox" id="user_remember_me" name="user_remember_me" tabindex="3">
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-actions">
-                <input id="form-actions-submit" type="" name="submit" value="Sign in" class="btn btn-primary" tabindex="4">
-            </div>
-        </form>
-
-        <a href="http://zero.webappsecurity.com/forgot-password.html" tabindex="5">Forgot your password ?</a>
+            </pre>
     </div>
 </div>
-
-<script type="text/javascript">
-    $(function () {
-        $("#user_login").focus();
-        $("#credentials").tooltip({'trigger':'hover', 'title': 'Login/Password - username/password', placement : 'right'});
-
-        $("#login_form").click(function(event) {
-            $(this).append('<input id="user_token" type="hidden" name="user_token" value="d9fe4ef5-c5e7-4d17-9a37-ea8d21c019a6"/>');
-        });
-    });
-</script>
-
-
             </div>
         </div>
 
@@ -155,7 +110,7 @@
         var path = "/";
 
         var attachClickHandler = function(selector, handler) {
-        $(".extra").on('click', selector, handler);
+$(".extra").on('click', selector, handler);
         }
 
         var footerLinks = {
@@ -179,6 +134,4 @@
 </script>
 
 
-</body>
-<script src="./login.js"></script>
-</html>
+</body></html>
