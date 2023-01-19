@@ -8,12 +8,14 @@ Deploy: https://clone-zero-bank.netlify.app/
 Pages:
 * [x] index.html (Zero - Personal Banking - Loans - Credit Cards)
 * [x] login.html (Zero - Log in)
+* [x] forgot-password.html (Forgotten Password)
+
 * [ ] Zero - FAQ - Frequently Asked Questions
 * [ ] Zero - Contact Us
 * [ ] Zero - Help
 * [ ] Zero - Free Access to Online Banking
 * [ ] Zero - Account Summary
-* [ ] Zero - Account Activity
+* [x] Zero - Account Activity
 * [ ] Zero - Transfer Funds
 * [ ] Zero - Pay Bills
 * [ ] Zero - My Money Map
