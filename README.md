@@ -11,11 +11,11 @@ Pages:
 * [x] forgot-password.html (Forgotten Password)
 
 * [ ] Zero - FAQ - Frequently Asked Questions
-* [ ] Zero - Contact Us
+* [x] feedback.html (Zero - Contact Us)
 * [ ] Zero - Help
-* [x] Zero - Free Access to Online Banking
-* [ ] Zero - Account Summary
-* [x] Zero - Account Activity
+* [x] online-banking.html (Zero - Free Access to Online Banking)
+* [x] account-summary.html (Zero - Account Summary)
+* [ ] Zero - Account Activity
 * [ ] Zero - Transfer Funds
 * [ ] Zero - Pay Bills
 * [ ] Zero - My Money Map
