@@ -10,7 +10,7 @@ Pages:
 * [x] login.html (Zero - Log in)
 * [x] forgot-password.html (Forgotten Password)
 
-* [ ] Zero - FAQ - Frequently Asked Questions
+* [x] faq.html (Zero - FAQ - Frequently Asked Questions)
 * [x] feedback.html (Zero - Contact Us)
 * [ ] Zero - Help
 * [x] online-banking.html (Zero - Free Access to Online Banking)
