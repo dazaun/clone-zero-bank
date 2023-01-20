@@ -13,10 +13,11 @@ Pages:
 * [ ] Zero - FAQ - Frequently Asked Questions
 * [ ] Zero - Contact Us
 * [ ] Zero - Help
-* [ ] Zero - Free Access to Online Banking
+* [x] Zero - Free Access to Online Banking
 * [ ] Zero - Account Summary
 * [x] Zero - Account Activity
 * [ ] Zero - Transfer Funds
 * [ ] Zero - Pay Bills
 * [ ] Zero - My Money Map
 * [ ] Zero - Online Statements
+* [ ] Zero - Search Tips (http://zero.webappsecurity.com/search.html)

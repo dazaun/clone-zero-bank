@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<!-- saved from url=(0041)http://zero.webappsecurity.com/index.html -->
+<!-- saved from url=(0050)http://zero.webappsecurity.com/online-banking.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <title>Zero - Personal Banking - Loans - Credit Cards</title>
+    <title>Zero - Free Access to Online Banking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
     <link type="text/css" rel="stylesheet" href="./downloaded_files/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="./downloaded_files/font-awesome.css">
     <link type="text/css" rel="stylesheet" href="./downloaded_files/main.css">
-    <link type="text/css" rel="stylesheet" href="./css/styles.css">
-   
-    <!-- <link type="text/css" rel="stylesheet" href="./libs/bootstrap-4.0.0/dist/css/bootstrap.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="./downloaded_files/jquery-1.8.2.min.js"></script>
-    <script src="./downloaded_files/bootstrap.min.js"></script>
-    <script src="./downloaded_files/placeholders.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <script src="./downloaded_files/jquery-1.7.2.min.js"></script>
+        <script src="./downloaded_files/bootstrap.min.js"></script>
+
+    <script src="./downloaded_files/placeholders.min.js"></script>
     <script type="text/javascript">
         Placeholders.init({
             live: true, // Apply to future and modified elements too
-            hideOnFocus: true // Hide the placeholder when the element receives focus     
+            hideOnFocus: true // Hide the placeholder when the element receives focus
         });
     </script>
     <script type="text/javascript">
@@ -34,17 +32,17 @@
 </head>
 <body contenteditable="false">
     <div class="wrapper">
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a href="./index.html" class="brand">Zero Bank</a>
-                    
-                    <div>
-                        <ul class="nav float-right">
-                            <li>    <form action="http://zero.webappsecurity.com/search.html" class="navbar-search pull-right" style="padding-right: 20px">
-                                <input type="text" id="searchTerm" name="searchTerm" class="search-query" placeholder="Search">
-                            </form>
-                        </li>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="./index.html" class="brand">Zero Bank</a>
+
+                <div>
+                    <ul class="nav float-right">
+                        <li>    <form action="http://zero.webappsecurity.com/search.html" class="navbar-search pull-right" style="padding-right: 20px">
+        <input type="text" id="searchTerm" name="searchTerm" class="search-query" placeholder="Search">
+    </form>
+</li>
                         <li>
                             <button id="signin_button" type="button" class="signin btn btn-info">
                                 <i class="icon-signin"></i>Signin
@@ -54,15 +52,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="container">
-            <div class="alert alert-error">
-                <button id="button_close_error_message" type="button" class="close" data-dismiss="alert">&times;</button>
-                <h4 id="blink2">!!!Warning!!!</h4>
-                <p>This is a copy of the training site <a target="_blank" href="http://zero.webappsecurity.com">zero.webappsecurity.com</a>. Site copied for educational purposes. All actions with the site are performed at your own peril and risk!</p>
-            </div>
-        </div>
-
     </div>
 
     <script type="text/javascript">
@@ -82,8 +71,8 @@
     <div class="span12">
         <div id="nav" class="clearfix">
             <ul id="pages-nav">
-                <li id="homeMenu" class="active"><div><strong>Home</strong></div></li>
-                <li id="onlineBankingMenu"><div><strong>Online Banking</strong></div></li>
+                <li id="homeMenu"><div><strong>Home</strong></div></li>
+                <li id="onlineBankingMenu" class="active"><div><strong>Online Banking</strong></div></li>
                 <li id="feedback"><div><strong>Feedback</strong></div></li>
             </ul>
         </div>
@@ -121,87 +110,95 @@
 
 <div class="row">
     <div class="span12">
-        <div id="carousel" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="item">
-                    <img src="./downloaded_files/img/main_carousel_1.jpg" width="940" height="401" alt="">
-                    <div class="custom carousel-caption">
-                        <h4>Online Banking</h4>
-                        <p>Welcome to Zero Online Banking. Zero provides a greener and more convenient way to manage your money. Zero enables you to check your account balances, pay your bills, transfer money, and  keep detailed records of your transactions,  wherever there is an internet connection.</p>
+        <div class="hero-unit hero-home">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <h1>Online Banking</h1>
+                        <p>
+                            Pay bills easily
+                        </p>
                     </div>
                 </div>
-                <div class="item active">
-                    <img src="./downloaded_files/img/main_carousel_2.jpg" width="940" height="401" alt="">
-                    <div class="custom carousel-caption">
-                        <h4>Online Banking</h4>
-                        <p>Welcome to Zero Online Banking. Zero provides a greener and more convenient way to manage your money. Zero enables you to check your account balances, pay your bills, transfer money, and  keep detailed records of your transactions,  wherever there is an internet connection.</p>
-
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./downloaded_files/img/main_carousel_3.jpg" width="940" height="401" alt="">
-                    <div class="custom carousel-caption">
-                        <h4>Online Banking</h4>
-                        <p>Welcome to Zero Online Banking. Zero provides a greener and more convenient way to manage your money. Zero enables you to check your account balances, pay your bills, transfer money, and  keep detailed records of your transactions,  wherever there is an internet connection.</p>
-                    </div>
-                </div>
-             </div>
-            <a class="carousel-control custom left" href="http://zero.webappsecurity.com/index.html#carousel" data-slide="prev">‹</a>
-            <a class="carousel-control custom right" href="http://zero.webappsecurity.com/index.html#carousel" data-slide="next">›</a>
+            </div>
         </div>
     </div>
 </div>
 
-<hr class="row-divider">
-
-<div id="online_banking_features" class="row divider">
-    <div class="span3">
-        <h4><i class="icon icon-bookmark"></i> Online Banking</h4>
-         <p>Click the button below to view  online banking features.</p>
-        <a id="online-banking" class="btn btn-small btn-info">More Services</a>
-    </div>
-    <div class="span3">
-        <div>
-            <h4><span class="headers" id="account_activity_link"><i class="icon icon-user"></i>Checking Account Activity</span></h4>
-            <p>Use Zero to view the most up-to-date listings of your deposits, withdrawals, interest payments, and a number of other useful transactions.
-            </p>
-        </div>
-    </div>
-    <div class="span3">
-        <div>
-            <h4><span class="headers" id="transfer_funds_link"><i class="icon icon-random"></i>Transfer Funds</span></h4>
-            <p>Use Zero to safely and securely transfer funds between accounts. There is no hold placed on online money transfers, so your funds are available when you need them.
-            </p>
-        </div>
-    </div>
-    <div class="span3">
-        <div>
-            <h4><span class="headers" id="money_map_link"><i class="icon icon-list-alt"></i>My Money Map</span></h4>
-             <p>Use Zero to set up and monitor your personalized money map. A money map is an easy-to-use online tool that helps you manage your finances efficiently. With Money Map, you can create a budget, sort your finances into spending and savings categories,  check the interest your accounts are earning, and gain new understanding of your patterns with the help of Zero’s clear charts and graphs.
-             </p>
-        </div>
+<div class="row">
+    <div class="span12" style="text-align: center">
+        <h3>Our Bank is trusted by over 1,000,000 customers world wide.
+                <a href="./login.html">Sign in</a> now!
+        </h3>
     </div>
 </div>
 
+<div id="online_banking_features">
+    <div class="row margin7top">
+        <div class="span4">
+            <h4>
+                <i class="icon icon-list-alt"></i>
+                <span class="headers" id="account_summary_link">Account Summary</span>
+            </h4>
+            <hr class="content-divider">
+            <p>See all of your account balances at a glance.</p>
+        </div>
+
+        <div class="span4">
+            <h4>
+                <i class="icon icon-shopping-cart"></i>
+                <span class="headers" id="account_activity_link">Account Activity</span>
+            </h4>
+            <hr class="content-divider">
+            <p>View the most up-to-date listings of your deposits, withdrawals, interest payments, and other transactions.</p>
+        </div>
+
+        <div class="span4">
+            <h4><i class="icon icon-retweet"></i><span class="headers" id="transfer_funds_link">Transfer Funds</span></h4>
+            <hr class="content-divider">
+            <p>Safely and securely transfer funds between accounts.</p>
+        </div>
+    </div>
+
+    <div class="row margin7top">
+        <div class="span4">
+            <h4><i class="icon icon-credit-card"></i><span class="headers" id="pay_bills_link">Pay Bills</span></h4>
+            <hr class="content-divider">
+            <p>Pay your bills quickly and securely online.</p>
+        </div>
+
+        <div class="span4">
+            <h4><i class="icon icon-sitemap"></i><span class="headers" id="money_map_link">My Money Map</span></h4>
+            <hr class="content-divider">
+            <p>Use Zero to set up and monitor your personalized money map. A money map is an easy-to-use online tool that helps you manage your finances efficiently.</p>
+        </div>
+
+        <div class="span4">
+            <h4><i class="icon icon-edit"></i><span class="headers" id="online_statements_link">Online Statements</span></h4>
+            <hr class="content-divider">
+            <p>View the statement history of all your accounts.</p>
+        </div>
+    </div>
+</div>
 <script type="text/javascript">
     $(function() {
-        $("#carousel").carousel({ interval: false });
-
-        $("div").on("click", "a[id='online-banking']", function(event){
-            event.preventDefault();
-            window.location.href = "/" + "online-banking" + ".html";
-        });
-
         var path = "/bank/";
+
         var featureIdToName = {
+            "account_summary_link": "account-summary",
             "account_activity_link": "account-activity",
             "transfer_funds_link": "transfer-funds",
-            "money_map_link": "money-map"
+            "pay_bills_link": "pay-bills",
+            "money_map_link": "money-map",
+            "online_statements_link": "online-statements",
+            "brokerage_link": "brokerage",
+            "alerts_link": "alerts",
+            "foreign_exchange_link": "foreign-exchange"
         }
         $.each(featureIdToName, function(featureId, featureName) {
             $("#online_banking_features").on("click", "span[id='" + featureId + "']", function(event) {
                 event.preventDefault();
-                window.location.href = path + featureName +".html";
+                window.location.href = path + featureName + ".html";
             });
         });
     });
