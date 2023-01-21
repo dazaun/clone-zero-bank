@@ -12,7 +12,7 @@ Pages:
 
 * [x] faq.html (Zero - FAQ - Frequently Asked Questions)
 * [x] feedback.html (Zero - Contact Us)
-* [ ] Zero - Help
+* [x] help.html (Zero - Help)
 * [x] online-banking.html (Zero - Free Access to Online Banking)
 * [x] account-summary.html (Zero - Account Summary)
 * [ ] Zero - Account Activity
