@@ -82,7 +82,7 @@
                     <li>Click Continue.</li>
                 </ol>
             </div>
-            <div id="topic2" hidden class="span8">
+            <div id="topic3" hidden class="span8">
                 <h3>How do I pay bills?</h3>
                 <ol>
                     <li>From the bank home page, click Pay Bills.</li>
@@ -153,7 +153,6 @@
 
         var attachClickHandler = function(selector, handler) {
             $(".extra").on('click', selector, handler);
-            // $(".questions").on('click', selector, handler);
         }
 
         var links = {
@@ -161,37 +160,42 @@
             "contact_hp_link" : { absolute: true, page: "https://support.fortify.com" },
             "privacy_statement_link": { absolute: true, page: "https://www.microfocus.com/about/legal/#privacy" },
             "terms_of_use_link": { absolute: true, page: "https://www.microfocus.com/about/legal/" },
-            // "link-topic1": { showBlock: true, blockId: "topic1" },
-            // "link-topic2" : { showBlock: true, blockId: "topic2" },
-            // "link-topic3": { showBlock: true, blockId: "topic3" }
         };
 
         var links = {
         };
 
         $.each(links, function(indexInArray, valueOfElement) {
-            attachClickHandler('span[id="' + indexInArray + '"]', function(event) {
+            attachClickHandler('span[id="' + valueOfElement + '"]', function(event) {
                 event.preventDefault();
                 if (valueOfElement.absolute) {
                     window.location.href = valueOfElement.page;
-                // } if (valueOfElement.showBlock) {
-                //     const elems = document.querySelectorAll('.span8')
-                //     elems.forEach(el => el.hidden = true)
-                //     document.querySelector(`.${valueOfElement.blockId}`).hidden = false
-                //     // window.location.href = valueOfElement.page;
                 } else {
                     window.location.href = path + valueOfElement.page + ".html";
                 }
             });
         });
-
-        // fixme
-        // $( ".questions" ).on( "click", "ol li a", function() {
-        //     event.preventDefault();
-        //     console.log( $( this ) );
-        // });
-
     });
+
+    const clickHandler = (event) => {
+        event.preventDefault()
+        const targetLinkIdList = ['link-topic1','link-topic2','link-topic3']
+        const currentId = event.target.id
+        const isClickOnTargetLink = targetLinkIdList.includes(currentId)
+
+        if(isClickOnTargetLink) {
+            const classNameShowedBlock = [...currentId.split('-')][1]
+
+            document.querySelectorAll('div.span8').forEach(el => {
+                el.hidden = true
+            })
+
+            document.querySelector(`#${classNameShowedBlock}`).hidden = false
+        }
+
+    }
+    
+    document.querySelector('ol.questions').addEventListener('click', clickHandler)
 </script>
 
 
