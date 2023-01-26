@@ -30,7 +30,7 @@ const checkPassword = () => {
     const token = document.querySelector('#user_token').value
     console.log('Win')
     localStorage.setItem('token', token);
-    window.location.href = "./pages/account-summary.html";
+    window.location.href = "./pages/bank/account-summary.html";
   } else {
     document.querySelector('#user_login').value = ''
     document.querySelector('#user_password').value = ''

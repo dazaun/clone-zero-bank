@@ -15,9 +15,10 @@ Pages:
 * [x] help.html (Zero - Help)
 * [x] online-banking.html (Zero - Free Access to Online Banking)
 * [x] account-summary.html (Zero - Account Summary)
-* [ ] Zero - Account Activity
+* [x] /pages/bank/account-activity.html (Zero - Account Activity)
 * [ ] Zero - Transfer Funds
 * [ ] Zero - Pay Bills
 * [ ] Zero - My Money Map
 * [ ] Zero - Online Statements
 * [ ] Zero - Search Tips (http://zero.webappsecurity.com/search.html)
+* [ ] logout.html
