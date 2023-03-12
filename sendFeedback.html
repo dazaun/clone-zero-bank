@@ -41,12 +41,12 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <a href="http://zero.webappsecurity.com/index.html" class="brand">Zero Bank</a>
+                <a href="./index.html" class="brand">Zero Bank</a>
 
                 <div>
                     <ul class="nav float-right">
                         <li>
-                            <form action="http://zero.webappsecurity.com/search.html" class="navbar-search pull-right" style="padding-right: 20px">
+                            <form action="./search.html" class="navbar-search pull-right" style="padding-right: 20px">
                                 <input type="text" id="searchTerm" name="searchTerm" class="search-query" placeholder="Search">
                             </form>
                         </li>
@@ -109,9 +109,14 @@
         <div class="page-header">
             <h3 id="feedback-title">Feedback</h3>
         </div>
-
-            Thank you for your comments, sdfs.
+        <div class="feedback-content">
+            Thank you for your comments, User.
             They will be reviewed by our Customer Service staff and given the full attention that they deserve.
+        </div>
+        <br>
+        <p>
+            <a href="./index.html">Go back.</a>
+        </p>
     </div>
 </div>
 
@@ -205,5 +210,6 @@ $(".extra " + selector).live('click', handler);        }
 
 
 <script src="./js/checkAccess.js"></script>
+<script src="./js/getFeedback.js"></script>
 </body>
 </html>
