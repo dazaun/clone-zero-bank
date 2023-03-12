@@ -5,6 +5,8 @@
     <title>Zero - Personal Banking - Loans - Credit Cards</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="./downloaded_files/img/dollar-ico.png" type="image/png">
+
 
     <link type="text/css" rel="stylesheet" href="./downloaded_files/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="./downloaded_files/font-awesome.css">
@@ -38,32 +40,60 @@
             <div class="navbar-inner">
                 <div class="container">
                     <a href="./index.html" class="brand">Zero Bank</a>
-                    
                     <div>
                         <ul class="nav float-right">
-                            <li>    <form action="http://zero.webappsecurity.com/search.html" class="navbar-search pull-right" style="padding-right: 20px">
-                                <input type="text" id="searchTerm" name="searchTerm" class="search-query" placeholder="Search">
-                            </form>
-                        </li>
-                        <li>
-                            <button id="signin_button" type="button" class="signin btn btn-info">
-                                <i class="icon-signin"></i>Signin
-                            </button>
-                        </li>
-                    </ul>
+                            <li>
+                                <form action="http://zero.webappsecurity.com/search.html" class="navbar-search pull-right" style="padding-right: 20px">
+                                    <input type="text" id="searchTerm" name="searchTerm" class="search-query" placeholder="Search">
+                                </form>
+                            </li>
+
+                            <!-- signInElem  -->
+                            <li class="signInElem">
+                                <button id="signin_button" type="button" class="signin btn btn-info">
+                                    <i class="icon-signin"></i>Signin
+                                </button>
+                            </li>
+
+                            <!-- elems for logged user  -->
+                            <li class="dropdown infoForLoggedUser">
+                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-cog"></i>
+                                    Settings
+                                    <b class="caret"></b>
+                                </a>
+    
+                                <ul class="dropdown-menu">
+                                    <li class="disabled"><a>Account Settings</a></li>
+                                    <li class="disabled"><a>Privacy Settings</a></li>
+                                    <li class="divider"></li>
+                                    <li><a id="help_link" href="./help.html">Help</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown infoForLoggedUser">
+                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-user"></i>username
+                                        <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="disabled"><a>My Profile</a></li>
+                                    <li class="divider"></li>
+                                    <li><a id="logout_link" href="./logout.html">Logout</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <!-- <div class="container">
+                <div class="alert alert-error">
+                    <button id="button_close_error_message" type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h4 id="blink2">!!!Warning!!!</h4>
+                    <p>This is a copy of the training site <a target="_blank" href="http://zero.webappsecurity.com">zero.webappsecurity.com</a>. Site copied for educational purposes. All actions with the site are performed at your own peril and risk!</p>
+                </div>
+            </div> -->
         </div>
-
-        <div class="container">
-            <div class="alert alert-error">
-                <button id="button_close_error_message" type="button" class="close" data-dismiss="alert">&times;</button>
-                <h4 id="blink2">!!!Warning!!!</h4>
-                <p>This is a copy of the training site <a target="_blank" href="http://zero.webappsecurity.com">zero.webappsecurity.com</a>. Site copied for educational purposes. All actions with the site are performed at your own peril and risk!</p>
-            </div>
-        </div>
-
-    </div>
 
     <script type="text/javascript">
         $(function() {
@@ -286,5 +316,6 @@ $(".extra").on('click', selector, handler);
     });
 </script>
 
-
-</body></html>
+<script src="./js/checkAccess.js"></script>
+</body>
+</html>
