@@ -2,8 +2,10 @@ const authorizedPagesArr = ['account-activity.html', 'account-summary.html', 'mo
 
 const showUserBlock = () => {
   const signInElem = document.querySelector('.signInElem')
-  signInElem.hidden = true
-  document.querySelectorAll('.infoForLoggedUser').forEach(el => el.hidden = false)
+  if(signInElem){
+    signInElem.hidden = true
+    document.querySelectorAll('.infoForLoggedUser').forEach(el => el.hidden = false)
+  }
 }
 
 const showSignBlock = () => {
