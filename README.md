@@ -9,7 +9,6 @@ Pages:
 * [x] index.html (Zero - Personal Banking - Loans - Credit Cards)
 * [x] login.html (Zero - Log in)
 * [x] forgot-password.html (Forgotten Password)
-
 * [x] faq.html (Zero - FAQ - Frequently Asked Questions)
 * [x] feedback.html (Zero - Contact Us)
 * [x] help.html (Zero - Help)
@@ -17,8 +16,15 @@ Pages:
 * [x] account-summary.html (Zero - Account Summary)
 * [x] /pages/bank/account-activity.html (Zero - Account Activity)
 * [ ] Zero - Transfer Funds
-* [ ] Zero - Pay Bills
-* [ ] Zero - My Money Map
-* [ ] Zero - Online Statements
-* [ ] Zero - Search Tips (http://zero.webappsecurity.com/search.html)
-* [ ] logout.html
+* [ ] `transfer-funds-verify.html` 
+* [ ] `transfer-funds-confirm.html`
+* [ ] Zero - Pay Bills `pay-bills.html`
+* [ ] Zero - My Money Map `money-map.html`
+* [ ] Zero - Online Statements `online-statements.html`
+* [ ] Zero - Search Tips `./search.html`
+* [x] logout.html `login.html`
+* [ ] search.html
+* [ ] `./sendFeedback.html`
+
+
+
