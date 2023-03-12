@@ -5,6 +5,7 @@
     <title>Zero - Account Summary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../../downloaded_files/img/dollar-ico.png" type="image/png">
 
     <link type="text/css" rel="stylesheet" href="../../downloaded_files/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../../downloaded_files/font-awesome.css">
@@ -15,7 +16,7 @@
     <script src="../../downloaded_files/jquery-1.8.2.min.js"></script>
     <script src="../../downloaded_files/bootstrap.min.js"></script>
     <script src="../../downloaded_files/placeholders.min.js"></script>
-    <script src="../../js/checkAccess.js"></script>
+
     <script type="text/javascript">
         Placeholders.init({
             live: true, // Apply to future and modified elements too
@@ -39,7 +40,7 @@
 
                 <div id="settingsBox">
                     <ul class="nav float-right">
-                        <li>    <form action="http://zero.webappsecurity.com/search.html" class="navbar-search pull-right" style="padding-right: 20px">
+                        <li>    <form action="../../search.html" class="navbar-search pull-right" style="padding-right: 20px">
         <input type="text" id="searchTerm" name="searchTerm" class="search-query" placeholder="Search">
     </form>
 </li>
@@ -54,7 +55,7 @@
                                 <li class="disabled"><a>Account Settings</a></li>
                                 <li class="disabled"><a>Privacy Settings</a></li>
                                 <li class="divider"></li>
-                                <li><a id="help_link" href="http://zero.webappsecurity.com/help.html">Help</a></li>
+                                <li><a id="help_link" href="../../help.html">Help</a></li>
                             </ul>
                         </li>
 
@@ -67,7 +68,7 @@ username                                <b class="caret"></b>
                             <ul class="dropdown-menu">
                                 <li class="disabled"><a>My Profile</a></li>
                                 <li class="divider"></li>
-                                <li><a id="logout_link" href="http://zero.webappsecurity.com/logout.html">Logout</a></li>
+                                <li><a id="logout_link" href="../../logout.html">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -84,10 +85,10 @@ username                                <b class="caret"></b>
             <ul class="nav nav-tabs">
                 <li id="account_summary_tab" class="active"><a href="#">Account Summary</a></li>
                 <li id="account_activity_tab"><a href="./account-activity.html">Account Activity</a></li>
-                <li id="transfer_funds_tab"><a href="http://zero.webappsecurity.com/bank/redirect.html?url=transfer-funds.html">Transfer Funds</a></li>
-                <li id="pay_bills_tab"><a href="http://zero.webappsecurity.com/bank/redirect.html?url=pay-bills.html">Pay Bills</a></li>
-                <li id="money_map_tab"><a href="http://zero.webappsecurity.com/bank/redirect.html?url=money-map.html">My Money Map</a></li>
-                <li id="online_statements_tab"><a href="http://zero.webappsecurity.com/bank/redirect.html?url=online-statements.html">Online Statements</a></li>
+                <li id="transfer_funds_tab"><a href="./transfer-funds.html">Transfer Funds</a></li>
+                <li id="pay_bills_tab"><a href="./pay-bills.html">Pay Bills</a></li>
+                <li id="money_map_tab"><a href="./money-map.html">My Money Map</a></li>
+                <li id="online_statements_tab"><a href="./online-statements.html">Online Statements</a></li>
             </ul>
         </div>
     </div>
@@ -340,5 +341,6 @@ $(".extra").on('click', selector, handler);
 </script>
 
 
-
-</body></html>
+<script src="../../js/checkAccess.js"></script>
+</body>
+</html>
