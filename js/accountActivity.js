@@ -162,38 +162,45 @@ $(function () {
 const isNoAccountId = window.location.search == ''
 let search = window.location.search.replaceAll('?accountId=','')
 
-let content
-switch(search){
-  case "1":
-    content = accountId1;
-    break;
-  case "2":
-    content = accountId2;
-    break;
-  case "3":
-    content = accountId3;
-    break;
-  case "4":
-    content = accountId4;
-    break;
-  case "5":
-    content = accountId5;
-    break;
-  case "6":
-    content = accountId6;
-    break;
-  default:
-    content = accountId1;  
-  }
+const changeContent = (search = "1") => {
 
-  document.querySelectorAll('#aa_accountId option').forEach((el, id)=>{
-    if( (id+1) == search) {
-     el.selected = true
-    }      
-  })
+  let content
+  switch(search){
+    case "1":
+      content = accountId1;
+      break;
+    case "2":
+      content = accountId2;
+      break;
+    case "3":
+      content = accountId3;
+      break;
+    case "4":
+      content = accountId4;
+      break;
+    case "5":
+      content = accountId5;
+      break;
+    case "6":
+      content = accountId6;
+      break;
+    default:
+      content = accountId1;  
+    }
+  
+    document.querySelectorAll('#aa_accountId option').forEach((el, id)=>{
+      if( (id+1) == search) {
+       el.selected = true
+      }      
+    })
+  
+  const infoBlock = document.querySelector('#all_transactions_for_account')
+  infoBlock.replaceChildren('')
+  infoBlock.insertAdjacentHTML("afterbegin", content)
+}
 
-const infoBlock = document.querySelector('#all_transactions_for_account')
-infoBlock.replaceChildren('')
-infoBlock.insertAdjacentHTML("afterbegin", content)
 
-// need to add update table, when a change checkbox
+const changeSelectHandler = (e) => changeContent(e.target.value)
+
+changeContent(search)
+document.querySelector("#aa_accountId").addEventListener('change', changeSelectHandler)
