@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <!-- saved from url=(0057)http://zero.webappsecurity.com/bank/account-activity.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Zero - Account Activity</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="shortcut icon" href="../../downloaded_files/img/dollar-ico.png" type="image/png">
+        
+        <!-- for loader -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
+        <link type="text/css" rel="stylesheet" href="../../downloaded_files/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="../../downloaded_files/font-awesome.css">
+        <link type="text/css" rel="stylesheet" href="../../downloaded_files/main.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <title>Zero - Account Activity</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="shortcut icon" href="../../downloaded_files/img/dollar-ico.png" type="image/png">
-    
-    <!-- for loader -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+        <link type="text/css" rel="stylesheet" href="../../downloaded_files/jquery-ui-1.8.16.custom.css">
+        <script src="../../downloaded_files/jquery-ui.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 
-    <link type="text/css" rel="stylesheet" href="../../downloaded_files/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="../../downloaded_files/font-awesome.css">
-    <link type="text/css" rel="stylesheet" href="../../downloaded_files/main.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-<!--
-    <link type="text/css" rel="stylesheet" href="../../downloaded_files/jquery-ui-1.8.16.custom.css">
-    <script src="../../downloaded_files/jquery-ui.min.js"></script>
--->
+        <script src="../../downloaded_files/jquery-1.8.2.min.js"></script>
+        <script src="../../downloaded_files/bootstrap.min.js"></script>
+        <script src="../../downloaded_files/placeholders.min.js"></script>
 
-<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script> -->
+        <script src="../../js/checkAccess.js"></script>
 
-<script src="../../downloaded_files/jquery-1.8.2.min.js"></script>
-<script src="../../downloaded_files/bootstrap.min.js"></script>
-<script src="../../downloaded_files/placeholders.min.js"></script>
-
-<script src="../../js/checkAccess.js"></script>
-
-<script type="text/javascript">
-    Placeholders.init({
-            live: true, // Apply to future and modified elements too
-            hideOnFocus: true // Hide the placeholder when the element receives focus
-        });
+        <script type="text/javascript">
+            Placeholders.init({
+                live: true, // Apply to future and modified elements too
+                hideOnFocus: true // Hide the placeholder when the element receives focus
+            });
         </script>
-    <script type="text/javascript">
-        $(document).ajaxError(function errorHandler(event, xhr, ajaxOptions, thrownError) {
-            if (xhr.status == 403) {
-                window.location.reload();
-            }
-        });
-    </script>
-</head>
+        <script type="text/javascript">
+            $(document).ajaxError(function errorHandler(event, xhr, ajaxOptions, thrownError) {
+                if (xhr.status == 403) {
+                    window.location.reload();
+                }
+            });
+        </script>
+    </head>
 <body contenteditable="false">
     <div class="wrapper">
         <div class="navbar navbar-fixed-top">
