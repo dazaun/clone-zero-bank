@@ -24,7 +24,7 @@ const openPage = () => {
   const isRedirect = window.location.search.length != 0
   const redirect = window.location.search.split('=')
   const redirectToPage = redirect[1]
-  // const redirectToPage = 
+
   console.log("redirectToPage: "+ redirectToPage)
   console.log("isRedirect: "+ isRedirect)
   
@@ -38,19 +38,18 @@ const openPage = () => {
 const checkPassword = () => {
   const usernamme = document.querySelector('#user_login').value
   const userPassword = document.querySelector('#user_password').value
-  const erorMsgElem = document.querySelector("#login_form > div.alert.alert-error").hidden=false
-  
+  const erorMsgElem = document.querySelector("#login_form > div.alert.alert-error")
+
   const isCorrentAuthData = usernamme === 'username' && userPassword === 'password'
   if(isCorrentAuthData) {
     const token = document.querySelector('#user_token').value
     localStorage.setItem('token', token);
-    // erorMsgElem.hidden=false
     return openPage()
   } else {
     document.querySelector('#user_login').value = ''
     document.querySelector('#user_password').value = ''
     localStorage.clear()
-    erorMsgElem.hidden=true
+    erorMsgElem.hidden=false
     return
   }
 }
