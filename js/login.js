@@ -38,17 +38,19 @@ const openPage = () => {
 const checkPassword = () => {
   const usernamme = document.querySelector('#user_login').value
   const userPassword = document.querySelector('#user_password').value
+  const erorMsgElem = document.querySelector("#login_form > div.alert.alert-error").hidden=false
   
   const isCorrentAuthData = usernamme === 'username' && userPassword === 'password'
   if(isCorrentAuthData) {
     const token = document.querySelector('#user_token').value
     localStorage.setItem('token', token);
+    // erorMsgElem.hidden=false
     return openPage()
   } else {
     document.querySelector('#user_login').value = ''
     document.querySelector('#user_password').value = ''
     localStorage.clear()
-    alert('Error: User not found.')
+    erorMsgElem.hidden=true
     return
   }
 }
